@@ -1,0 +1,129 @@
+#main-content {
+  display: flex;
+  height: 100%;
+  flex: 1 1 auto;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.row-container {
+  display: flex;
+}
+.row-container .tools-container {
+  margin: 10px;
+}
+.row-container .tools-container .row-tools {
+  margin: 5px 2px;
+}
+
+.editor-container {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  height: 150px;
+  width: 85%;
+}
+.editor-container .string-container {
+  display: flex;
+  width: 98%;
+  height: 100%;
+  height: -moz-available;
+  height: -webkit-fill-available;
+  height: fill-available;
+  margin: 0 auto 0;
+}
+.editor-container .string-container .guitar-string {
+  display: block;
+  width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+  background: #bcbcbc;
+  border: 1px solid;
+  border-bottom: none;
+}
+.editor-container .frets-container {
+  display: flex;
+  width: 97.8%;
+  height: 48px;
+  margin: 0 auto;
+  border: 1px solid;
+  z-index: 1;
+}
+.editor-container .frets-container .fret {
+  border: 1px solid;
+  display: block;
+  width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+}
+.editor-container .frets-container .fret-1 {
+  background: green;
+}
+.editor-container .frets-container .fret-2 {
+  background: red;
+}
+.editor-container .frets-container .fret-3 {
+  background: yellow;
+}
+.editor-container .frets-container .fret-4 {
+  background: blue;
+}
+.editor-container .frets-container .fret-5 {
+  background: orange;
+}
+.editor-container .frets-container .pressed {
+  background: #595f5f;
+}
+
+.generated-song-container {
+  background: #838383;
+  display: flex;
+  position: absolute;
+  left: 0.9%;
+  width: 83.2%;
+  height: 500px;
+  z-index: -1;
+  top: -320px;
+}
+.generated-song-container .string-default {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+}
+.generated-song-container .string-default .simple-note {
+  display: block;
+  width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+  height: 8%;
+  border: 1px solid;
+  margin: 5px;
+  background: #632e79;
+}
+.generated-song-container .string-default .empty-note {
+  display: block;
+  width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+  height: 8%;
+  margin: 5px;
+}
+.generated-song-container .bmp-line {
+  position: relative;
+  background: #2e2e2e;
+  width: 100%;
+  height: 4px;
+  top: 327px;
+}
